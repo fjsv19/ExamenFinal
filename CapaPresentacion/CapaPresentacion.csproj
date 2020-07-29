@@ -224,6 +224,8 @@
     <Content Include="fonts\fontawesome-webfonts.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="FormAdministrador.aspx" />
+    <Content Include="FormDocente.aspx" />
+    <Content Include="FormExamenDocente.aspx" />
     <Content Include="FormRegistrarDocente.aspx" />
     <Content Include="img\ajax-loader.gif" />
     <Content Include="img\ajax-loader1.gif" />
@@ -410,6 +412,20 @@
     <Compile Include="FormAdministrador.aspx.designer.cs">
       <DependentUpon>FormAdministrador.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FormDocente.aspx.cs">
+      <DependentUpon>FormDocente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormDocente.aspx.designer.cs">
+      <DependentUpon>FormDocente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormExamenDocente.aspx.cs">
+      <DependentUpon>FormExamenDocente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormExamenDocente.aspx.designer.cs">
+      <DependentUpon>FormExamenDocente.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FormRegistrarDocente.aspx.cs">
       <DependentUpon>FormRegistrarDocente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -432,6 +448,13 @@
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuario.Master.cs">
+      <DependentUpon>Usuario.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuario.Master.designer.cs">
+      <DependentUpon>Usuario.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\fonts\glyphicons-halflings-regular.eot" />
@@ -452,6 +475,7 @@
     <Content Include="js\plugins\slimScroll\slimScroll.jquery.json" />
     <Content Include="Home.Master" />
     <None Include="packages.config" />
+    <Content Include="Usuario.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

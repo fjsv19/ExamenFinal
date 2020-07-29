@@ -63,11 +63,11 @@ function updateDataAjax() {
         },
         success: function (response) {
             console.log(response);
-            /*if (response.d) {
-                alert("Registro actualizado de manera correcta.");
-            } else {
+            if (response.d) {
                 alert("No se pudo actualizar el registro.");
-            }*/
+            } else {
+                alert("Registro actualizado de manera correcta.");
+            }
         }
     });
 
@@ -88,9 +88,9 @@ function deleteDataAjax(data) {
         },
         success: function (response) {
             if (response.d) {
-                alert("Registro eliminado de manera correcta.");
-            } else {
                 alert("No se pudo eliminar el registro.");
+            } else {
+                alert("Registro eliminado de manera correcta.");
             }
         }
     });
@@ -119,7 +119,7 @@ $(document).on('click', '.btn-delete', function (e) {
     // paso 1: enviar el id al servidor por medio de ajax
     //deleteDataAjax(dataRow[0]);
     // paso 2: renderizar el datatable
-    //sendDataAjax();
+    sendDataAjax();
 
 });
 
@@ -144,7 +144,7 @@ $("#btnactualizar").click(function (e) {
     updateDataAjax();
 
 
-    //sendDataAjax();
+    sendDataAjax();
 });
 
 // Llamando a la funcion de ajax al cargar el documento

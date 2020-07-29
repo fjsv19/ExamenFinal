@@ -41,7 +41,7 @@ namespace CapaPresentacion
                         {
                             Session["abrirSesion"] = txtUsuario.Text;
                             Session["alumno"] = UsuarioLoginCache.CN_IDCONSTANTE;
-                            Response.Redirect("FormAlumno.aspx");
+                            Response.Redirect("FormDocente.aspx");
                         }
 
                     }

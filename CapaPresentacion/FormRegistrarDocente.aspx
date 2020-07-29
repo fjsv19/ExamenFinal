@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="FormRegistrarDocente.aspx.cs" Inherits="CapaPresentacion.FormRegistrarDocente" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="FormRegistrarDocente.aspx.cs" Inherits="CapaPresentacion.FormRegistrarDocente" ClientIDMode="Static"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="contentBody" runat="server">
 
     <section class="content-header">
-        <h3 style="text-align:center"><b>REGISTRO DE ALUMNO</b></h3>
+        <h3 style="text-align:center"><b>REGISTRO DE DOCENTE</b></h3>
     </section>
     <section class="content" style="padding-bottom:9px">
         <div class="row">
